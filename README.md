@@ -1,6 +1,9 @@
 # Plugin.XF.Backdrop
 Xamarin Form Backdrop Control, making use of Rg.Plugins.Popup
 
+# Supporting Platform
+Android, iOS10+
+
 # Preview
 <table>
   <tr>
@@ -19,6 +22,7 @@ Xamarin Form Backdrop Control, making use of Rg.Plugins.Popup
   
 
 # Installation
+Install nuget package to all your project
 ```
 Install-Package Plugin.XF.Backdrop -Version 1.0.0
 ```
