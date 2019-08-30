@@ -22,9 +22,10 @@ Please refer to Sample project for more information
 ```
 
 # Available parameter
+```
 SwipeToCloseTime(double) - The time in ms needed to close popup by swiping (default 300ms)
 PageContent(View) - The content view of the popup
-RoundedCorners(string[]) - "topleft", "topright", "bottomleft", "bottomright", "all", "none"\
+RoundedCorners(string[]) - "topleft", "topright", "bottomleft", "bottomright", "all", "none"
 CornerRadius(double)
 BorderColor(Color)
 BorderThincness(float)
@@ -33,3 +34,4 @@ ShadowOpacity(float)
 ShadowRadius(float)
 HorizontalShadowOffset(double)
 VerticalShadowOffset(double)
+```
