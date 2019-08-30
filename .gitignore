@@ -1,0 +1,11 @@
+bin
+obj
+nuget.exe
+/Plugin.XF.Backdrop.nuspec
+/Plugin.XF.Backdrop.1.0.0.nupkg
+/.vs/Plugin.XF.Backdrop/DesignTimeBuild/.dtbcache
+/.vs/Plugin.XF.Backdrop/v16/.suo
+/.vs/Plugin.XF.Backdrop/v16/Server/sqlite3/db.lock
+/.vs/Plugin.XF.Backdrop/v16/Server/sqlite3/storage.ide
+/.vs/Plugin.XF.Backdrop/v16/Server/sqlite3/storage.ide-shm
+/.vs/Plugin.XF.Backdrop/v16/Server/sqlite3/storage.ide-wal

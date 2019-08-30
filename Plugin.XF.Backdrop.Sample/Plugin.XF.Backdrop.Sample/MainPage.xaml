@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:backdrop="clr-namespace:Plugin.XF.Backdrop;assembly=Plugin.XF.Backdrop"
+             x:Class="Plugin.XF.Backdrop.Sample.MainPage">
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="20">
+        <Button Text="Bottom to top backdrop" Clicked="Button_Clicked" TextColor="White" BackgroundColor="Blue" HorizontalOptions="FillAndExpand"/>
+    </StackLayout>
+</ContentPage>

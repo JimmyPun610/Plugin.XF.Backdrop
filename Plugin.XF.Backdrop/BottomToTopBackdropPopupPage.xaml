@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 mc:Ignorable="d"
+                 xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                 xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                 xmlns:backdrop="clr-namespace:Plugin.XF.Backdrop"
+                 x:Class="Plugin.XF.Backdrop.BottomToTopBackdropPopupPage">
+    <popup:PopupPage.Animation>
+        <animations:MoveAnimation 
+            PositionIn="Bottom"
+            PositionOut="Bottom"
+            DurationIn="300"
+            DurationOut="300"
+            EasingIn="Linear"
+            EasingOut="Linear"
+            HasBackgroundAnimation="True"/>
+    </popup:PopupPage.Animation>
+    <RelativeLayout x:Name="FullView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <ContentView x:Name="CoverView" IsVisible="False"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=0}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=0}"/>
+        <Frame x:Name="Indictor" HorizontalOptions="CenterAndExpand" WidthRequest="40" BackgroundColor="White"
+               BorderColor="White" HeightRequest="5" CornerRadius="2" Margin="16" Padding="0"
+               RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-36}"/>
+        <backdrop:RoundedCornerStackLayout x:Name="PageView" Margin="1,1,1,1"
+                                           VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"  
+                                           RoundedCorners="{Binding Path=RoundedCorners}"  BorderColor="{Binding Path=BorderColor}" 
+                                           ShadowOpacity="{Binding Path=ShadowOpacity}" BorderThickness="{Binding Path=BorderThickness}"
+                                           ShadowColor="{Binding Path=ShadowColor}" CornerRadius="{Binding Path=CornerRadius}"
+                                           ShadowRadius="{Binding Path=ShadowRadius}"
+                                           VerticalShadowOffset="{Binding Path=VerticalShadowOffset}" HorizontalShadowOffset="{Binding Path=HorizontalShadowOffset}"
+                                           RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=0}"
+                                           RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=0}"
+                                           RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Indictor, Property=Height, Factor=1, Constant=32}">
+            <ContentView BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <ContentView x:Name="ViewContent" Content="{Binding Path=PageContent}"/>
+            </ContentView>
+        </backdrop:RoundedCornerStackLayout>
+        
+        <!--</StackLayout>-->
+    </RelativeLayout>
+
+</popup:PopupPage>
