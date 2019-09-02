@@ -47,6 +47,7 @@ Please refer to Sample project for more information
 ```
 SwipeToCloseTime(double) - The time in ms needed to close popup by swiping (default 300ms)
 PageContent(View) - The content view of the popup
+IndicatorColor(Color) - Top indicator color
 RoundedCorners(string[]) - "topleft", "topright", "bottomleft", "bottomright", "all", "none"
 CornerRadius(double)
 BorderColor(Color)

@@ -7,7 +7,7 @@
                                        xmlns:backdrop="clr-namespace:Plugin.XF.Backdrop;assembly=Plugin.XF.Backdrop"
                                        x:Class="Plugin.XF.Backdrop.Sample.SampleBottomToTopPopupPage"
                                        RoundedCorners="topleft,topright" ShadowOpacity="0" BorderThickness="3" ShadowColor="Transparent"
-                                       BorderColor="White" CornerRadius="-1">
+                                       BorderColor="White" CornerRadius="-1" IndicatorColor="White">
     <backdrop:BottomToTopBackdropPopupPage.PageContent>
         <ContentView>
             <StackLayout BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Spacing="0">
