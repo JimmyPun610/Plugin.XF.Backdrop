@@ -17,7 +17,7 @@ namespace Plugin.XF.Backdrop
         public DateTimeOffset? StartPanDownTime = null;
         public DateTimeOffset? EndPanDownTime = null;
         public double StartY;
-
+        public static readonly BindableProperty ViewMarginProperty = BindableProperty.Create(nameof(ViewMargin), typeof(Thickness), typeof(RoundedCornerStackLayout), new Thickness(0,0,0,0));
         public static readonly BindableProperty RoundedCornersProperty = BindableProperty.Create(nameof(RoundedCorners), typeof(string), typeof(RoundedCornerStackLayout), "All", validateValue: OnRoundedCornersPropertyValidateValue);
         public static readonly BindableProperty CornerRadiusProperty = BindableProperty.Create(nameof(CornerRadius), typeof(double), typeof(RoundedCornerStackLayout), Convert.ToDouble(-1));
         public static readonly BindableProperty ShadowColorProperty = BindableProperty.Create(nameof(ShadowColor), typeof(Color), typeof(RoundedCornerStackLayout), Color.Black);
@@ -28,6 +28,13 @@ namespace Plugin.XF.Backdrop
         public static readonly BindableProperty BorderColorProperty = BindableProperty.Create(nameof(BorderColor), typeof(Color), typeof(RoundedCornerStackLayout), Color.Transparent);
         public static readonly BindableProperty BorderThicknessProperty = BindableProperty.Create(nameof(BorderThickness), typeof(float), typeof(RoundedCornerStackLayout), 2f);
         public static readonly BindableProperty IndicatorColorProperty = BindableProperty.Create(nameof(IndicatorColor), typeof(Color), typeof(RoundedCornerStackLayout), Color.White);
+
+        public Thickness ViewMargin
+        {
+            get => (Thickness)GetValue(ViewMarginProperty);
+            set => SetValue(ViewMarginProperty, value);
+        }
+
 
         public Color IndicatorColor
         {

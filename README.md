@@ -24,7 +24,7 @@ Android, iOS10+
 # Installation
 Install nuget package to all your project
 ```
-Install-Package Plugin.XF.Backdrop -Version 1.0.0
+Install-Package Plugin.XF.Backdrop
 ```
 # How to use
 Please refer to Sample project for more information
@@ -80,4 +80,5 @@ ShadowOpacity(float)
 ShadowRadius(float)
 HorizontalShadowOffset(double)
 VerticalShadowOffset(double)
+ViewMargin(Thickness) - Set the view margin to the screen
 ```

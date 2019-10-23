@@ -18,7 +18,7 @@
             EasingOut="Linear"
             HasBackgroundAnimation="True"/>
     </popup:PopupPage.Animation>
-    <RelativeLayout x:Name="FullView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+    <RelativeLayout x:Name="FullView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="{Binding Path=ViewMargin}">
         <ContentView x:Name="CoverView" IsVisible="False"
                      RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=0}"
                      RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=0}"/>
